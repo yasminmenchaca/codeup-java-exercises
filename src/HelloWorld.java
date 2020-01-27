@@ -5,17 +5,20 @@ public class HelloWorld {
 
         // TODO: Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
 
-//        int myFavoriteNumber = 5;
+//        int myFavoriteNumber;
+//        myFavoriteNumber = 5;
 //        System.out.println(myFavoriteNumber);
 
         //TODO Create a String variable named myString and assign a string value to it, then print the variable out to the console.
 
-//        String myString = "Yasmin";
+//        String myString;
+//        myString = "Yasmin";
 //        System.out.println(myString);
 
         //TODO:Change your code to assign a character value to myString. What do you notice?
 
-//        char myString = "Yasmin";
+//        char myString;
+//        myString = 'Yasmin';
 //        System.out.println(myString);
 
         //TODO Change your code to assign the value 3.14159 to myString. What happens?
