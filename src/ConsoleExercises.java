@@ -47,7 +47,7 @@ public class ConsoleExercises {
 
         // TODO Prompt the user to enter values of length and width of a classroom at Codeup. Use the nextLine method to get user input and [parse](https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html#parseInt(java.lang.String) the resulting string to a numeric type. Assume that the rooms are perfect rectangles. Assume that the user will enter valid numeric data for length and width.
 
-        Scanner scanner = new Scanner(System.in).useDelimiter("/n");
+/*        Scanner scanner = new Scanner(System.in).useDelimiter("/n");
         System.out.println("Please enter the values of the length a classroom at Codeup.");
         String length = scanner.nextLine();
         System.out.println("Please enter the values of the width a classroom at Codeup.");
@@ -59,7 +59,7 @@ public class ConsoleExercises {
         int h = Integer.parseInt(height);
         System.out.println("The area is " + (l * w));
         System.out.println("The perimeter is " + ((2 * l) + (2 * w)));
-        System.out.println("The volume is " + (l * w * h));
+        System.out.println("The volume is " + (l * w * h));*/
 
 
         // TODO Rewrite your classroom program to use nextInt method. If you added the line of code above to your application, you should now have no trouble handling multiple pieces of user input.
