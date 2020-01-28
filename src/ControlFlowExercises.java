@@ -96,50 +96,62 @@ public class ControlFlowExercises {
         //4      | 16      | 64
         //5      | 25      | 125
 
+//        Scanner sc = new Scanner(System.in);
+//        String choice = "y";
 
-        System.out.println("Welcome to the Squares and Cubes Table");
-        System.out.println();
+//        while (choice.equalsIgnoreCase("y")) {
+//            // get the input from the user
+//            System.out.println("Enter an Integer: ");
+//            int integerNext = sc.nextInt();
+//
+//            System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");
+//            System.out.println("------" + "  " + "------" + "  " + "------");
+//
+//            for (int i = 1; i <= integerNext; i++) {
+//                int numberSquared = (int) Math.pow(i, 2);
+//                int numberCubed = (int) Math.pow(i, 3);
+//
+//                String message = "\n" + i + "       " + numberSquared + "       " + numberCubed;
+//
+//                System.out.println(message);
+//                System.out.println();
+//            }
+//            // see if the user wants to continue
+//            System.out.print("Continue? (y/n): ");
+//            choice = sc.next();
+//            System.out.println();
+//        }
 
-        Scanner sc = new Scanner(System.in);
-        String choice = "y";
 
-        while (choice.equalsIgnoreCase("y")) {
-            // get the input from the user
-            System.out.println("Enter an Integer: ");
-            int integerNext = sc.nextInt();
+        // TODO Convert given number grades into letter grades.
 
-            System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");
-            System.out.println("======" + "  " + "======" + "  " + "======");
+//        Scanner sc = new Scanner(System.in);
+//        String choice = "y";
+//
+//        while (choice.equalsIgnoreCase("y")) {
+//            // get the input from the user
+//            System.out.println("Enter a numerical grade from 0 to 100: ");
+//            int testScore = sc.nextInt();
+//
+//            char grade;
+//
+//            if (testScore >= 88) {
+//                grade = 'A';
+//            } else if (testScore >= 80) {
+//                grade = 'B';
+//            } else if (testScore >= 67) {
+//                grade = 'C';
+//            } else if (testScore >= 60) {
+//                grade = 'D';
+//            } else {
+//                grade = 'F';
+//            }
+//            System.out.println("Grade = " + grade);
+//            // see if the user wants to continue
+//            System.out.print("Continue? (y/n): ");
+//            choice = sc.next();
+//            System.out.println();
+//        }
 
-            for (int i = 1; i <= integerNext; i++) {
-                int numberSquared = (int) Math.pow(i, 2);
-                int numberCubed = (int) Math.pow(i, 3);
-
-                String message = "\n" + i + "       " + numberSquared + "       " + numberCubed;
-
-                System.out.println(message);
-                System.out.println();
-            }
-            // see if the user wants to continue
-            System.out.print("Continue? (y/n): ");
-            choice = sc.next();
-            System.out.println();
-        }
-
-        int testscore = 76;
-        char grade;
-
-        if (testscore >= 90) {
-            grade = 'A';
-        } else if (testscore >= 80) {
-            grade = 'B';
-        } else if (testscore >= 70) {
-            grade = 'C';
-        } else if (testscore >= 60) {
-            grade = 'D';
-        } else {
-            grade = 'F';
-        }
-        System.out.println("Grade = " + grade);
     }
 }
