@@ -21,11 +21,13 @@ public class ControlFlowExercises {
 
         // TODO Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
 
-//        int i = 0;
-//        while (i <= 100) {
-//            System.out.println(i);
-//            i += 2;
-//        }
+//        int x = 0;
+//
+//        do {
+//            System.out.println(x);
+//            x += 2;
+//        } while (x <= 100);
+
 
         // for loop
 
@@ -37,10 +39,11 @@ public class ControlFlowExercises {
         // TODO Alter your loop to count backwards by 5's from 100 to -10.
 
 //        int i = 100;
-//        while (i >= -10) {
+//
+//        do {
 //            System.out.println(i);
 //            i -= 5;
-//        }
+//        } while (i >= -10);
 
         // for loop
 
