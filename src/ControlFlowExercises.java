@@ -101,7 +101,7 @@ public class ControlFlowExercises {
 
 //        Scanner sc = new Scanner(System.in);
 //        String choice = "y";
-
+//
 //        while (choice.equalsIgnoreCase("y")) {
 //            // get the input from the user
 //            System.out.println("Enter an Integer: ");
