@@ -1,12 +1,8 @@
-import java.awt.*;
 import java.util.Scanner;
 
 public class MethodsExercises {
     public static void main(String[] args) {
         System.out.println("We are in main(String[] args");
-
-        int userInput = getInteger();
-        System.out.println("The user entered: " + userInput);
 
 //        System.out.println(addition(1, 2));
 //        System.out.println(subtraction(1, 2));
@@ -16,6 +12,15 @@ public class MethodsExercises {
 //        System.out.println(foodForThought(100));
 //        System.out.println(noAsterisk(100, 5));
 //        System.out.println(multiplier(1,2));
+
+//        int userInput = getInteger();
+//        System.out.println("The user entered: " + userInput);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number between 1 and 10: ");
+        int n = scanner.nextInt();
+        int result = factorial(n);
+        System.out.println("The factorial of " + n + " is " + result);
 
     }
 
@@ -68,24 +73,28 @@ public class MethodsExercises {
 
     // TODO 2 - Create a method that validates that user input is in a certain range.
 
-    public static int getInteger() {
+//    public static int getInteger() {
+//        int userInput;
+//        Scanner input = new Scanner(System.in);
+//        System.out.println();
+//        System.out.println("Enter a number between 1 and 10: ");
+//        userInput = input.nextInt();
+//        if (userInput <= 10 && userInput >= 1) {
+//            return userInput;
+//        } else {
+//            return getInteger();
+//        }
+//
+//    }
 
-        int userInput;
-        Scanner input = new Scanner(System.in);
-        System.out.println();
+    // TODO 3 - Calculate the factorial of a number.
 
-        System.out.println("Enter a number between 1 and 10: ");
-        userInput = input.nextInt();
-
-        if (userInput <= 10 && userInput >= 1) {
-
-            return userInput;
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
         } else {
-
-            return getInteger();
-
+            return n * factorial(n - 1);
         }
 
     }
-
 }
