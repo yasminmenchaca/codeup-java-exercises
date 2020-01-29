@@ -16,11 +16,11 @@ public class MethodsExercises {
 //        int userInput = getInteger();
 //        System.out.println("The user entered: " + userInput);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number between 1 and 10: ");
-        int n = scanner.nextInt();
-        int result = factorial(n);
-        System.out.println("The factorial of " + n + " is " + result);
+         System.out.print("Enter a number: ");
+         Scanner input = new Scanner(System.in);
+         int num = input.nextInt();
+         long factorialResult = factorialRecursive(num);
+         System.out.println(factorialResult);
 
     }
 
@@ -89,12 +89,11 @@ public class MethodsExercises {
 
     // TODO 3 - Calculate the factorial of a number.
 
-    public static int factorial(int n) {
-        if (n == 0) {
+    public static long factorialRecursive(int n) {
+        if (n == 0 || n == 1)
             return 1;
-        } else {
-            return n * factorial(n - 1);
-        }
 
+        return n * factorialRecursive(n - 1);
     }
+
 }
