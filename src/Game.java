@@ -7,11 +7,11 @@ public class Game {
 
     JFrame window;
     Container con;
-    JPanel titleNamePanel, startButtonPanel, mainTextPanel;
+    JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel;
     JLabel titleNameLabel;
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 80);
     Font normalFont = new Font("Times New Roman", Font.PLAIN, 30);
-    JButton startButton;
+    JButton startButton, choice1, choice2, choice3, choice4;
     JTextArea mainTextArea;
 
     TitleScreenHandler tsHandler = new TitleScreenHandler();
@@ -74,6 +74,36 @@ public class Game {
         mainTextArea.setFont(normalFont);
         mainTextArea.setLineWrap(true);
         mainTextPanel.add(mainTextArea);
+
+        choiceButtonPanel = new JPanel();
+        choiceButtonPanel.setBounds(250, 350, 300, 150);
+        choiceButtonPanel.setBackground(Color.red);
+        con.add(choiceButtonPanel);
+
+        choice1 = new JButton();
+        choice1.setBackground(Color.black);
+        choice1.setForeground(Color.white);
+        choice1.setFont(normalFont);
+        choiceButtonPanel.add(choice1);
+
+        choice2 = new JButton();
+        choice2.setBackground(Color.black);
+        choice2.setForeground(Color.white);
+        choice2.setFont(normalFont);
+        choiceButtonPanel.add(choice2);
+
+        choice3 = new JButton();
+        choice3.setBackground(Color.black);
+        choice3.setForeground(Color.white);
+        choice3.setFont(normalFont);
+        choiceButtonPanel.add(choice3);
+
+        choice4 = new JButton();
+        choice4.setBackground(Color.black);
+        choice4.setForeground(Color.white);
+        choice4.setFont(normalFont);
+        choiceButtonPanel.add(choice4);
+
     }
 
     public class TitleScreenHandler implements ActionListener {
