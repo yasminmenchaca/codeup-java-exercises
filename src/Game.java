@@ -1,5 +1,4 @@
 /*
-
    ▄████████ ████████▄   ▄█    █▄     ▄████████ ███▄▄▄▄       ███     ███    █▄     ▄████████    ▄████████        ▄██████▄     ▄████████   ▄▄▄▄███▄▄▄▄      ▄████████
   ███    ███ ███   ▀███ ███    ███   ███    ███ ███▀▀▀██▄ ▀█████████▄ ███    ███   ███    ███   ███    ███       ███    ███   ███    ███ ▄██▀▀▀███▀▀▀██▄   ███    ███
   ███    ███ ███    ███ ███    ███   ███    █▀  ███   ███    ▀███▀▀██ ███    ███   ███    ███   ███    █▀        ███    █▀    ███    ███ ███   ███   ███   ███    █▀
@@ -8,8 +7,6 @@
   ███    ███ ███    ███ ███    ███   ███    █▄  ███   ███     ███     ███    ███ ▀███████████   ███    █▄        ███    ███   ███    ███ ███   ███   ███   ███    █▄
   ███    ███ ███   ▄███ ███    ███   ███    ███ ███   ███     ███     ███    ███   ███    ███   ███    ███       ███    ███   ███    ███ ███   ███   ███   ███    ███
   ███    █▀  ████████▀   ▀██████▀    ██████████  ▀█   █▀     ▄████▀   ████████▀    ███    ███   ██████████       ████████▀    ███    █▀   ▀█   ███   █▀    ██████████
-                                                                                   ███    ███
-
 */
 
 import javax.swing.*;
@@ -22,11 +19,14 @@ public class Game {
     JFrame window;
     Container con;
     JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel, playerPanel;
-    JLabel titleNameLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelNumber;
+    JLabel titleNameLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 80);
     Font normalFont = new Font("Times New Roman", Font.PLAIN, 30);
     JButton startButton, choice1, choice2, choice3, choice4;
     JTextArea mainTextArea;
+    int playerHP;
+    String weapon;
+
 
     TitleScreenHandler tsHandler = new TitleScreenHandler();
 
@@ -114,13 +114,39 @@ public class Game {
         choiceButtonPanel.add(choice4);
 
         playerPanel = new JPanel();
-        playerPanel.setBounds(100,15,600,50);
-        playerPanel.setBackground(Color.blue);
-        playerPanel.setLayout(new GridLayout(1,4));
+        playerPanel.setBounds(100, 15, 600, 50);
+        playerPanel.setBackground(Color.black);
+        playerPanel.setLayout(new GridLayout(1, 4));
         con.add(playerPanel);
+
         hpLabel = new JLabel("HP: ");
         hpLabel.setFont(normalFont);
+        hpLabel.setForeground(Color.white);
+        playerPanel.add(hpLabel);
 
+        hpLabelNumber = new JLabel();
+        hpLabelNumber.setFont(normalFont);
+        hpLabelNumber.setForeground(Color.white);
+        playerPanel.add(hpLabelNumber);
+
+        weaponLabel = new JLabel("Weapon: ");
+        weaponLabel.setFont(normalFont);
+        weaponLabel.setForeground(Color.white);
+        playerPanel.add(weaponLabel);
+
+        weaponLabelName = new JLabel();
+        weaponLabelName.setFont(normalFont);
+        weaponLabelName.setForeground(Color.white);
+        playerPanel.add(weaponLabelName);
+
+        playerSetup();
+    }
+
+    public void playerSetup() {
+        playerHP = 15;
+        weapon = "Knife";
+        weaponLabelName.setText(weapon);
+        hpLabelNumber.setText("" + playerHP);
     }
 
     public class TitleScreenHandler implements ActionListener {
