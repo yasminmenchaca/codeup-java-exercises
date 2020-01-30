@@ -14,14 +14,13 @@ public class MethodsExercises {
 //        System.out.println(multiplier(1,2));
 
 //        int userInput = getInteger();
-//        System.out.println("The user entered: " + userInput);
+//        System.out.println("Your number is " + userInput + "!" + " Bye!");
 
-         System.out.print("Enter a number: ");
-         Scanner input = new Scanner(System.in);
-         int num = input.nextInt();
-         long factorialResult = factorialRecursive(num);
-         System.out.println(factorialResult);
-
+        System.out.print("Enter a number between 1 and 10: ");
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        long factorialResult = factorialRecursive(num);
+        System.out.println(factorialResult);
     }
 
     // TODO 1A - Create four separate methods. Each will perform an arithmetic operation
@@ -89,10 +88,9 @@ public class MethodsExercises {
 
     // TODO 3 - Calculate the factorial of a number.
 
-    public static long factorialRecursive(int n) {
+    public static int factorialRecursive(int n) {
         if (n == 0 || n == 1)
             return 1;
-
         return n * factorialRecursive(n - 1);
     }
 
