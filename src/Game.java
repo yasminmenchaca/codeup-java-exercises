@@ -7,7 +7,7 @@ public class Game {
 
     JFrame window;
     Container con;
-    JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel;
+    JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel, playerPanel;
     JLabel titleNameLabel;
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 80);
     Font normalFont = new Font("Times New Roman", Font.PLAIN, 30);
@@ -64,7 +64,7 @@ public class Game {
 
         mainTextPanel = new JPanel();
         mainTextPanel.setBounds(100, 100, 600, 250);
-        mainTextPanel.setBackground(Color.blue);
+        mainTextPanel.setBackground(Color.black);
         con.add(mainTextPanel);
 
         mainTextArea = new JTextArea("This is the main text area");
@@ -77,32 +77,39 @@ public class Game {
 
         choiceButtonPanel = new JPanel();
         choiceButtonPanel.setBounds(250, 350, 300, 150);
-        choiceButtonPanel.setBackground(Color.red);
+        choiceButtonPanel.setBackground(Color.black);
+        choiceButtonPanel.setLayout(new GridLayout(4, 1));
         con.add(choiceButtonPanel);
 
-        choice1 = new JButton();
-        choice1.setBackground(Color.black);
-        choice1.setForeground(Color.white);
+        choice1 = new JButton("Choice 1");
+//        choice1.setBackground(Color.black);
+        choice1.setForeground(Color.black);
         choice1.setFont(normalFont);
         choiceButtonPanel.add(choice1);
 
-        choice2 = new JButton();
-        choice2.setBackground(Color.black);
-        choice2.setForeground(Color.white);
+        choice2 = new JButton("Choice 2");
+//        choice2.setBackground(Color.black);
+        choice2.setForeground(Color.black);
         choice2.setFont(normalFont);
         choiceButtonPanel.add(choice2);
 
-        choice3 = new JButton();
-        choice3.setBackground(Color.black);
-        choice3.setForeground(Color.white);
+        choice3 = new JButton("Choice 3");
+//        choice3.setBackground(Color.black);
+        choice3.setForeground(Color.black);
         choice3.setFont(normalFont);
         choiceButtonPanel.add(choice3);
 
-        choice4 = new JButton();
-        choice4.setBackground(Color.black);
-        choice4.setForeground(Color.white);
+        choice4 = new JButton("Choice 4");
+//        choice4.setBackground(Color.black);
+        choice4.setForeground(Color.black);
         choice4.setFont(normalFont);
         choiceButtonPanel.add(choice4);
+
+        playerPanel = new JPanel();
+        playerPanel.setBounds(100,15,600,50);
+        playerPanel.setBackground(Color.blue);
+        playerPanel.setLayout(new GridLayout(1,4));
+        con.add(playerPanel);
 
     }
 
