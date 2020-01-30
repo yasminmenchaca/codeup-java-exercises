@@ -1,3 +1,17 @@
+/*
+
+   ▄████████ ████████▄   ▄█    █▄     ▄████████ ███▄▄▄▄       ███     ███    █▄     ▄████████    ▄████████        ▄██████▄     ▄████████   ▄▄▄▄███▄▄▄▄      ▄████████
+  ███    ███ ███   ▀███ ███    ███   ███    ███ ███▀▀▀██▄ ▀█████████▄ ███    ███   ███    ███   ███    ███       ███    ███   ███    ███ ▄██▀▀▀███▀▀▀██▄   ███    ███
+  ███    ███ ███    ███ ███    ███   ███    █▀  ███   ███    ▀███▀▀██ ███    ███   ███    ███   ███    █▀        ███    █▀    ███    ███ ███   ███   ███   ███    █▀
+  ███    ███ ███    ███ ███    ███  ▄███▄▄▄     ███   ███     ███   ▀ ███    ███  ▄███▄▄▄▄██▀  ▄███▄▄▄          ▄███          ███    ███ ███   ███   ███  ▄███▄▄▄
+▀███████████ ███    ███ ███    ███ ▀▀███▀▀▀     ███   ███     ███     ███    ███ ▀▀███▀▀▀▀▀   ▀▀███▀▀▀         ▀▀███ ████▄  ▀███████████ ███   ███   ███ ▀▀███▀▀▀
+  ███    ███ ███    ███ ███    ███   ███    █▄  ███   ███     ███     ███    ███ ▀███████████   ███    █▄        ███    ███   ███    ███ ███   ███   ███   ███    █▄
+  ███    ███ ███   ▄███ ███    ███   ███    ███ ███   ███     ███     ███    ███   ███    ███   ███    ███       ███    ███   ███    ███ ███   ███   ███   ███    ███
+  ███    █▀  ████████▀   ▀██████▀    ██████████  ▀█   █▀     ▄████▀   ████████▀    ███    ███   ██████████       ████████▀    ███    █▀   ▀█   ███   █▀    ██████████
+                                                                                   ███    ███
+
+*/
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -8,7 +22,7 @@ public class Game {
     JFrame window;
     Container con;
     JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel, playerPanel;
-    JLabel titleNameLabel;
+    JLabel titleNameLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelNumber;
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 80);
     Font normalFont = new Font("Times New Roman", Font.PLAIN, 30);
     JButton startButton, choice1, choice2, choice3, choice4;
@@ -28,7 +42,6 @@ public class Game {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.getContentPane().setBackground(Color.black);
         window.setLayout(null);
-//        window.setVisible(true);
         con = window.getContentPane();
 
         titleNamePanel = new JPanel();
@@ -43,7 +56,6 @@ public class Game {
         startButtonPanel.setBackground(Color.black);
 
         startButton = new JButton("Start");
-//        startButton.setBackground(Color.black);
         startButton.setForeground(Color.black);
         startButton.setFont(normalFont);
         startButton.addActionListener(tsHandler);
@@ -82,25 +94,21 @@ public class Game {
         con.add(choiceButtonPanel);
 
         choice1 = new JButton("Choice 1");
-//        choice1.setBackground(Color.black);
         choice1.setForeground(Color.black);
         choice1.setFont(normalFont);
         choiceButtonPanel.add(choice1);
 
         choice2 = new JButton("Choice 2");
-//        choice2.setBackground(Color.black);
         choice2.setForeground(Color.black);
         choice2.setFont(normalFont);
         choiceButtonPanel.add(choice2);
 
         choice3 = new JButton("Choice 3");
-//        choice3.setBackground(Color.black);
         choice3.setForeground(Color.black);
         choice3.setFont(normalFont);
         choiceButtonPanel.add(choice3);
 
         choice4 = new JButton("Choice 4");
-//        choice4.setBackground(Color.black);
         choice4.setForeground(Color.black);
         choice4.setFont(normalFont);
         choiceButtonPanel.add(choice4);
@@ -110,6 +118,8 @@ public class Game {
         playerPanel.setBackground(Color.blue);
         playerPanel.setLayout(new GridLayout(1,4));
         con.add(playerPanel);
+        hpLabel = new JLabel("HP: ");
+        hpLabel.setFont(normalFont);
 
     }
 
