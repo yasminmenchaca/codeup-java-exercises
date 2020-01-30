@@ -1,15 +1,20 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Game {
 
     JFrame window;
     Container con;
-    JPanel titleNamePanel, startButtonPanel;
+    JPanel titleNamePanel, startButtonPanel, mainTextPanel;
     JLabel titleNameLabel;
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 80);
     Font normalFont = new Font("Times New Roman", Font.PLAIN, 30);
     JButton startButton;
+    JTextArea mainTextArea;
+
+    TitleScreenHandler tsHandler = new TitleScreenHandler();
 
     public static void main(String[] args) {
 
@@ -34,19 +39,47 @@ public class Game {
         titleNameLabel.setFont(titleFont);
 
         startButtonPanel = new JPanel();
-        startButtonPanel.setBounds(300,400,200,100);
+        startButtonPanel.setBounds(300, 400, 200, 100);
         startButtonPanel.setBackground(Color.black);
 
         startButton = new JButton("Start");
 //        startButton.setBackground(Color.black);
         startButton.setForeground(Color.black);
         startButton.setFont(normalFont);
+        startButton.addActionListener(tsHandler);
 
         titleNamePanel.add(titleNameLabel);
         startButtonPanel.add(startButton);
+
         con.add(titleNamePanel);
         con.add(startButtonPanel);
 
         window.setVisible(true);
+    }
+
+    public void createGameScreen() {
+
+        titleNamePanel.setVisible(false);
+        startButtonPanel.setVisible(false);
+
+        mainTextPanel = new JPanel();
+        mainTextPanel.setBounds(100, 100, 600, 250);
+        mainTextPanel.setBackground(Color.blue);
+        con.add(mainTextPanel);
+
+        mainTextArea = new JTextArea("This is the main text area");
+        mainTextArea.setBounds(100, 100, 600, 250);
+        mainTextArea.setBackground(Color.black);
+        mainTextArea.setForeground(Color.white);
+        mainTextArea.setFont(normalFont);
+        mainTextArea.setLineWrap(true);
+        mainTextPanel.add(mainTextArea);
+    }
+
+    public class TitleScreenHandler implements ActionListener {
+
+        public void actionPerformed(ActionEvent event) {
+            createGameScreen();
+        }
     }
 }
