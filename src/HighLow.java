@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class HighLow {
     public static void main(String[] args) {
