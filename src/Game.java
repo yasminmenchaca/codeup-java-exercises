@@ -204,6 +204,13 @@ public class Game {
                         case "c3":
                             break;
                     }
+                    break;
+                case "talkGuard":
+                    switch (yourChoice) {
+                        case "c1":
+                            townGate();
+                            break;
+                    }
             }
         }
 
