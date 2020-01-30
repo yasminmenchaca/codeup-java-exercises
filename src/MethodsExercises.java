@@ -13,14 +13,14 @@ public class MethodsExercises {
 //        System.out.println(noAsterisk(100, 5));
 //        System.out.println(multiplier(1,2));
 
-//        int userInput = getInteger();
-//        System.out.println("Your number is " + userInput + "!" + " Bye!");
 
-        System.out.print("Enter a number between 1 and 10: ");
-        Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
-        long factorialResult = factorialRecursive(num);
-        System.out.println(factorialResult);
+//        int userInput = getInteger();
+//        System.out.println("Your number is " + userInput + "!");
+
+//        rollDie();
+//        factoral();
+
+
     }
 
     // TODO 1A - Create four separate methods. Each will perform an arithmetic operation
@@ -86,12 +86,50 @@ public class MethodsExercises {
 //
 //    }
 
+
     // TODO 3 - Calculate the factorial of a number.
 
-    public static int factorialRecursive(int n) {
-        if (n == 0 || n == 1)
-            return 1;
-        return n * factorialRecursive(n - 1);
-    }
+//    public static void factoral() {
+//        Scanner sc = new Scanner(System.in);
+//        String choice = "y";
+//        int factorial = 1;
+//        int i;
+//        while (choice.equalsIgnoreCase("y")) {
+//            System.out.print("Enter your number: ");
+//            int number = sc.nextInt();
+//            System.out.println();
+//
+//            if (number > 0) {
+//                for (i = 1; i <= number; i++) {
+//                    factorial = factorial * i;
+//                    System.out.print(i);
+//                    if (i < number)
+//                        System.out.print(" * ");
+//                }
+//                System.out.println(" = " + factorial);
+//                // see if the user wants to continue
+//                System.out.print("Continue? (y/n): ");
+//                choice = sc.next();
+//                System.out.println();
+//            }
+//
+//        }
+//    }
+
+
+    //TODO Create an application that simulates dice rolling.
+
+//    public static int getRand(int n) {
+//        return (int) (Math.random() * n + 1);
+//    }
+
+//    public static void rollDie() {
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("How Many Sides? ");
+//        int numSides = scan.nextInt();
+//        System.out.printf("You rolled: %d & %d!\n", getRand(numSides), getRand(numSides));
+//        System.out.print("Roll again? y/n ");
+//        if ("y".equals(scan.next().toLowerCase())) rollDie();
+//    }
 
 }
