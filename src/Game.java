@@ -168,7 +168,7 @@ public class Game {
         choice1.setText("Talk to the guard");
         choice2.setText("Attack guard");
         choice3.setText("Leave");
-        choice4.setText(" ");
+        choice4.setText("---------");
     }
 
     public void talkGuard() {
@@ -176,9 +176,9 @@ public class Game {
         mainTextArea.setText("Guard: Hello Stranger. \nI have never seen your face. \nI am sorry but I cannot let you into the town.");
 
         choice1.setText(">");
-        choice2.setText("");
-        choice3.setText("");
-        choice4.setText("");
+        choice2.setText("---------");
+        choice3.setText("---------");
+        choice4.setText("---------");
     }
 
     public void attackGuard() {
@@ -187,14 +187,14 @@ public class Game {
         playerHP = playerHP - 3;
         hpLabelNumber.setText("" + playerHP);
         choice1.setText(">");
-        choice2.setText("");
-        choice3.setText("");
-        choice4.setText("");
+        choice2.setText("---------");
+        choice3.setText("---------");
+        choice4.setText("---------");
     }
 
     public void crossRoad() {
         position = "crossRoad";
-        mainTextArea.setText("You are at a crossroad.\nIf you go south, you will go back to the town.");
+        mainTextArea.setText("You are at a crossroad.\nIf you go South, you will go back to the town.");
 
         choice1.setText("Go North");
         choice2.setText("Go East");
@@ -207,10 +207,10 @@ public class Game {
         mainTextArea.setText("There is a river. \nYou drink the water and rest at the riverside. \n\n(Your HP is recovered by 2)");
         playerHP = playerHP + 2;
         hpLabelNumber.setText("" + playerHP);
-        choice1.setText("Go south");
-        choice2.setText("");
-        choice3.setText("");
-        choice4.setText("");
+        choice1.setText("Go South");
+        choice2.setText("---------");
+        choice3.setText("---------");
+        choice4.setText("---------");
     }
 
     public void east() {
@@ -218,10 +218,10 @@ public class Game {
         mainTextArea.setText("You walked into a forest and found a Long Sword!\n\n(You obtained a Long Sword)");
         weapon = "Long Sword";
         weaponLabelName.setText(weapon);
-        choice1.setText("Go west");
-        choice2.setText("");
-        choice3.setText("");
-        choice4.setText("");
+        choice1.setText("Go West");
+        choice2.setText("---------");
+        choice3.setText("---------");
+        choice4.setText("---------");
 
     }
 
@@ -230,8 +230,8 @@ public class Game {
         mainTextArea.setText("You encounter a goblin!");
         choice1.setText("Fight");
         choice2.setText("Run");
-        choice3.setText("");
-        choice4.setText("");
+        choice3.setText("---------");
+        choice4.setText("---------");
     }
 
     public void fight() {
@@ -239,8 +239,8 @@ public class Game {
         mainTextArea.setText("Monster HP: " + monsterHP + "\n\nWhat do you do?");
         choice1.setText("Attack");
         choice2.setText("Run");
-        choice3.setText("");
-        choice4.setText("");
+        choice3.setText("---------");
+        choice4.setText("---------");
     }
 
     public void playerAttack() {
@@ -259,9 +259,9 @@ public class Game {
         monsterHP = monsterHP - playerDamage;
 
         choice1.setText(">");
-        choice2.setText("");
-        choice3.setText("");
-        choice4.setText("");
+        choice2.setText("---------");
+        choice3.setText("---------");
+        choice4.setText("---------");
     }
 
     public void monsterAttack() {
@@ -289,7 +289,7 @@ public class Game {
 
         silverRing = 1;
 
-        choice1.setText("Go east");
+        choice1.setText("Go East");
         choice2.setText("");
         choice3.setText("");
         choice4.setText("");
