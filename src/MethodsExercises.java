@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class MethodsExercises {
     public static void main(String[] args) {
-        System.out.println("We are in main(String[] args");
 
 //        System.out.println(addition(1, 2));
 //        System.out.println(subtraction(1, 2));
@@ -53,13 +52,13 @@ public class MethodsExercises {
 //    }
     // TODO Bonus A - Create your multiplication method without the * operator (Hint: a loop might be helpful).
 
-//    public static int noAsterisk(int num, int times) {
-//        int n = num;
-//        for (int i = 1; i < times; i++) {
-//            num += n;
-//        }
-//        return num;
-//    }
+    public static long noAsterisk(long num, long times) {
+        long n = num;
+        for (long i = 1; i < times; i++) {
+            num += n;
+        }
+        return num;
+    }
 
     //TODO Bonus B - Do the above with recursion.
 
