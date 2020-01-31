@@ -15,7 +15,7 @@ public class Input {
     }
 
     public boolean yesNo() {
-        System.out.println("Yes/No?");
+        System.out.println("Please enter yes or no.");
         String yesOrNo = scanner.nextLine();
         return yesOrNo.equalsIgnoreCase("yes") || yesOrNo.equalsIgnoreCase("y");
     }
@@ -38,7 +38,6 @@ public class Input {
     }
 
     public double getDouble(double min, double max) {
-
         System.out.format("Choose number between %s and %s: \n", min, max);
         double userDouble = scanner.nextDouble();
         if (userDouble >= min && userDouble <= max) {
