@@ -14,7 +14,7 @@ public class Person {
 
     // prints a message to the console using the person's name
     public void sayHello() {
-        System.out.println("Hello from " + this.getName());
+        System.out.println("Hello, my name is " + this.name);
     }
 
     public Person(String name) {
