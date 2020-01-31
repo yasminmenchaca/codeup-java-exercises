@@ -114,5 +114,7 @@ public class HelloWorld {
         // TODO What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
 
 
+        Car tesla = new Car("tesla", "model s", 2019);
+        System.out.println(tesla);
     }
 }
