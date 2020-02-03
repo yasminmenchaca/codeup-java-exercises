@@ -25,7 +25,7 @@ public class ArraysExercises {
 //            System.out.println(arr1[i]);
 //        }
 
-//         copying array arr1 to arr2 with new length as 5
+//         copying array arr1 to arr2 with new length as 4
         String[] arr2 = Arrays.copyOf(arr1, 4);
         arr2[3] = "Yasmin";
 
