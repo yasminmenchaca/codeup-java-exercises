@@ -1,7 +1,25 @@
 package shapes;
 
 public class Rectangle {
-    // todo  It should have protected properties for both length and width.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    ------------------- Code from prev exercise -------------------
+        // todo  It should have protected properties for both length and width.
     protected int length;
     protected int width;
 
