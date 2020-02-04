@@ -7,7 +7,7 @@ public class Rectangle {
 
     // todo Rectangle should define a constructor that accepts two numbers for length and width, and sets those properties.
 
-    public Rectangle(int length, int width){
+    public Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }
@@ -16,13 +16,11 @@ public class Rectangle {
     //  perimeter = 2 x length + 2 x width
     //  area = length x width
 
-    public int getPerimeter(){
-        return 2 * (this.length + this.width);
+    public int getPerimeter() {
+        return (2 * this.length) + (2 * this.width);
     }
 
-    public int getArea(){
+    public int getArea() {
         return this.length * this.width;
     }
-
-
 }
