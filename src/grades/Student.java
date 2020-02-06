@@ -38,16 +38,12 @@ public class Student {
     // TODO Test your Student class by adding a main method and creating Student objects. Verify that you can add grades to each object, and that your getGradeAverage method correctly returns the average of the student's grades.
     public static void main(String[] args) {
         Student lynn = new Student("Lynn");
-        lynn.addGrade(81);
+        lynn.addGrade(81); // add an element to the collection (optionally) at a specified index
         lynn.addGrade(95);
         lynn.addGrade(73);
         System.out.println("Student Name: " + lynn.getName());
         System.out.println("Student Avg: " + lynn.getGradeAverage());
         lynn.addGrade(100);
         System.out.println("New Avg: " + lynn.getGradeAverage());
-    }
-
-    public ArrayList<Integer> getGrades() {
-        return this.grades;
     }
 }
