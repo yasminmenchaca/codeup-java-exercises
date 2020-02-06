@@ -1,19 +1,18 @@
 package grades;
 
-import util.Input;
+        import util.Input;
 
-import java.util.HashMap;
-import java.util.Scanner;
+        import java.util.HashMap;
+        import java.util.Scanner;
 
 // TODO Inside the main method, create a HashMap named students. It should have keys that are strings that represent github students, and values that are Student objects. Create at least 4 student objects with at least 3 grades each, and add them to the map.
 
 public class GradesApplication {
     public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        Input input = new Input();
+//        boolean useranswer;
         HashMap<String, Student> students = new HashMap<>();
-
-        Scanner scanner = new Scanner(System.in);
-        Input input = new Input();
-        boolean userAnswer;
 
         Student larry = new Student("Larry");
         larry.addGrade(77);
@@ -40,7 +39,10 @@ public class GradesApplication {
         students.put("chemical_blaze", ismael);
 
         // TODO Create the command line interface
+        System.out.println("Here are the Github usernames of our students:");
 
-
+        for (String username : students.keySet()) {
+            System.out.printf(" | %s | ", username);
+        }
     }
 }

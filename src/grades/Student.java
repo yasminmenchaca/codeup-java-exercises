@@ -47,7 +47,7 @@ public class Student {
         System.out.println("New Avg: " + lynn.getGradeAverage());
     }
 
-//    public ArrayList<Integer> getGrades(){
-//        return this.grades;
-//    }
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
+    }
 }
