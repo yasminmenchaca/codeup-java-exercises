@@ -6,12 +6,12 @@ public class Groceries {
     private double ItemPrice;
     private int ItemQty;
 
-    public Groceries() {
-        ItemName = "Fruit";
-        ItemPrice = 100;
-        ItemQty = 1;
-
-    }
+//    public Groceries() {
+//        ItemName = "Fruit";
+//        ItemPrice = 100;
+//        ItemQty = 1;
+//
+//    }
 
     public Groceries(String ItemName, double ItemPrice, int ItemQty) {
         this.ItemName = ItemName;
