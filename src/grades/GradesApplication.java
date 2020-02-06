@@ -9,7 +9,9 @@ import java.util.Scanner;
 
 public class GradesApplication {
     public static void main(String[] args) {
+
         HashMap<String, Student> students = new HashMap<>();
+
         Scanner scan = new Scanner(System.in);
         Input input = new Input();
         boolean userAnswer = true;
@@ -39,6 +41,7 @@ public class GradesApplication {
         students.put("chemical_blaze", ismael);
 
         // TODO Create the command line interface
+
         do {
             System.out.println("\nWelcome!\n");
             System.out.println("Here are the Github usernames of our students:\n");
