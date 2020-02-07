@@ -35,7 +35,7 @@ public class Input {
     public int getInt() {
         System.out.println("Enter any number: ");
         try {
-            return Integer.parseInt(scanner.nextLine());
+            return Integer.parseInt(scanner.next());
         } catch (Exception e) {
             System.out.println("Please enter a valid integer");
             return getInt();
@@ -60,6 +60,26 @@ public class Input {
         } catch (Exception e) {
             System.out.println("Please enter a valid number");
             return getDouble();
+        }
+    }
+
+    public int getBinary() {
+        System.out.println("Enter any number: ");
+        try {
+            return Integer.valueOf(scanner.nextLine(), 2);
+        } catch (Exception e) {
+            System.out.println("Invalid Binary");
+            return getBinary();
+        }
+    }
+
+    public int getHex() {
+        System.out.println("Enter any number: ");
+        try {
+            return Integer.valueOf(scanner.nextLine(), 16);
+        } catch (Exception e) {
+            System.out.println("Invalid Hex");
+            return getHex();
         }
     }
 }
