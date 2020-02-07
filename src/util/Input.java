@@ -34,7 +34,12 @@ public class Input {
 
     public int getInt() {
         System.out.println("Enter any number: ");
-        return scanner.nextInt();
+        try {
+            return Integer.parseInt(scanner.nextLine());
+        } catch (Exception e) {
+            System.out.println("Please enter a valid integer");
+            return getInt();
+        }
     }
 
     public double getDouble(double min, double max) {
@@ -50,6 +55,11 @@ public class Input {
 
     public double getDouble() {
         System.out.println("Enter any number: ");
-        return scanner.nextDouble();
+        try {
+            return Double.parseDouble(scanner.nextLine());
+        } catch (Exception e) {
+            System.out.println("Please enter a valid number");
+            return getDouble();
+        }
     }
 }
