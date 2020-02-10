@@ -1,5 +1,8 @@
 //import java.util.Scanner;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,7 +10,7 @@ public class MorningWarmups {
     public static void main(String[] args) {
 
 //        System.out.println(noAsterisk(100, 5));
-        consoleWrite();
+//        consoleWrite();
 
     }
 
@@ -61,14 +64,15 @@ public class MorningWarmups {
 
     // TODO write a java program that reads in a series of 3-5 lines and then writes them out to the console
 
-    public static void consoleWrite() {
-        String[] data = {"Hello, my name is Yasmin",
-                "I am trying to write in a console.",
-                "Today is Monday.",
-                "The weather will change in the afternoon.",
-                "Stack Overflow is my best friend"};
-        for (String s : data) {
-            System.out.println(s);
-        }
-    }
+//    public static void consoleWrite() {
+//        String[] data = {"Hello, my name is Yasmin",
+//                "I am trying to write in a console.",
+//                "Today is Monday.",
+//                "The weather will change in the afternoon.",
+//                "Stack Overflow is my best friend"};
+//        for (String s : data) {
+//            System.out.println(s);
+//        }
+//    }
+
 }
