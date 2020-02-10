@@ -7,6 +7,7 @@ public class MorningWarmups {
     public static void main(String[] args) {
 
 //        System.out.println(noAsterisk(100, 5));
+        consoleWrite();
 
     }
 
@@ -55,7 +56,19 @@ public class MorningWarmups {
 
 // todo Create a String[] with at least 6 String objects. Also create an empty ArrayList<String>. Then loop over the array and put the items into the ArrayList so that we have the same contents
 
-    String[] fruits = {"banana", "orange", "apple", "grape", "mango", "melon"};
-    ArrayList<String> arr = new ArrayList<>();
+//    String[] fruits = {"banana", "orange", "apple", "grape", "mango", "melon"};
+//    ArrayList<String> arr = new ArrayList<>();
 
+    // TODO write a java program that reads in a series of 3-5 lines and then writes them out to the console
+
+    public static void consoleWrite() {
+        String[] data = {"Hello, my name is Yasmin",
+                "I am trying to write in a console.",
+                "Today is Monday.",
+                "The weather will change in the afternoon.",
+                "Stack Overflow is my best friend"};
+        for (String s : data) {
+            System.out.println(s);
+        }
+    }
 }
