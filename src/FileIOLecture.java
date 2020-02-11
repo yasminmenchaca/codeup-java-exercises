@@ -9,7 +9,7 @@ public class FileIOLecture {
     public static void main(String[] args) {
 //        newFile();
 //        writeFile();
-//        readWriteFile();
+        readWriteFile();
     }
 
     static void newFile() {
