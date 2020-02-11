@@ -9,7 +9,7 @@ public class FileIOLecture {
     public static void main(String[] args) {
 //        newFile();
 //        writeFile();
-        readWriteFile();
+//        readWriteFile();
     }
 
     static void newFile() {
@@ -38,9 +38,6 @@ public class FileIOLecture {
     static void writeFile() {
         List<String> fruit = new ArrayList<>();
         fruit.add("banana");
-        fruit.add("orange");
-        fruit.add("peach");
-        fruit.add("pineapple");
         for (String fr : fruit) {
             System.out.println(fr);
         }
@@ -63,7 +60,6 @@ public class FileIOLecture {
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
-
         fruit.add("kiwi");
         fruit.add("starfruit");
         try {
