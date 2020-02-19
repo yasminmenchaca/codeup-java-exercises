@@ -11,6 +11,7 @@ public class MorningWarmups {
 
 //        System.out.println(noAsterisk(100, 5));
 //        consoleWrite();
+        System.out.println(divide(0, 0));
 
     }
 
@@ -74,5 +75,14 @@ public class MorningWarmups {
 //            System.out.println(s);
 //        }
 //    }
+
+    public static double divide(double a, double b) throws ArithmeticException {
+        double quotient = 0.0;
+        if (b == 0) {
+            throw new ArithmeticException("Attempt to divide by zero in divide");
+        }
+        quotient = (double) a / b;
+        return quotient;
+    }
 
 }
