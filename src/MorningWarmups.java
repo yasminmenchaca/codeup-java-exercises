@@ -1,5 +1,3 @@
-//import java.util.Scanner;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -11,52 +9,51 @@ public class MorningWarmups {
 
 //        System.out.println(noAsterisk(100, 5));
 //        consoleWrite();
-        System.out.println(divide(0, 0));
-
+//        System.out.println(divide(0, 0));
     }
 
     // TODO Create your multiplication method without the * operator (Hint: a loop might be helpful).
 
-/*    public static long noAsterisk(long num, long times) {
-        long n = num;
-        for (long i = 1; i < times; i++) {
-            num += n;
-        }
-        return num;
-    }*/
+//    public static long noAsterisk(long num, long times) {
+//        long n = num;
+//        for (long i = 1; i < times; i++) {
+//            num += n;
+//        }
+//        return num;
+//    }
 
     // TODO Write a Java program to add two binary numbers.
 
 
-/*    public static class addBinary {
-        public static void main(String[] args) {
-            long binary1, binary2;
-            int i = 0, remainder = 0;
-            int[] sum = new int[20];
-            Scanner in = new Scanner(System.in);
-
-            System.out.print("Input first binary number: ");
-            binary1 = in.nextLong();
-            System.out.print("Input second binary number: ");
-            binary2 = in.nextLong();
-
-            while (binary1 != 0 || binary2 != 0) {
-                sum[i++] = (int) ((binary1 % 10 + binary2 % 10 + remainder) % 2);
-                remainder = (int) ((binary1 % 10 + binary2 % 10 + remainder) / 2);
-                binary1 = binary1 / 10;
-                binary2 = binary2 / 10;
-            }
-            if (remainder != 0) {
-                sum[i++] = remainder;
-            }
-            --i;
-            System.out.print("Sum of two binary numbers: ");
-            while (i >= 0) {
-                System.out.print(sum[i--]);
-            }
-            System.out.print("\n");
-        }
-    }*/
+//    public static class addBinary {
+//        public static void main(String[] args) {
+//            long binary1, binary2;
+//            int i = 0, remainder = 0;
+//            int[] sum = new int[20];
+//            Scanner in = new Scanner(System.in);
+//
+//            System.out.print("Input first binary number: ");
+//            binary1 = in.nextLong();
+//            System.out.print("Input second binary number: ");
+//            binary2 = in.nextLong();
+//
+//            while (binary1 != 0 || binary2 != 0) {
+//                sum[i++] = (int) ((binary1 % 10 + binary2 % 10 + remainder) % 2);
+//                remainder = (int) ((binary1 % 10 + binary2 % 10 + remainder) / 2);
+//                binary1 = binary1 / 10;
+//                binary2 = binary2 / 10;
+//            }
+//            if (remainder != 0) {
+//                sum[i++] = remainder;
+//            }
+//            --i;
+//            System.out.print("Sum of two binary numbers: ");
+//            while (i >= 0) {
+//                System.out.print(sum[i--]);
+//            }
+//            System.out.print("\n");
+//        }
+//    }
 
 // todo Create a String[] with at least 6 String objects. Also create an empty ArrayList<String>. Then loop over the array and put the items into the ArrayList so that we have the same contents
 
@@ -76,13 +73,13 @@ public class MorningWarmups {
 //        }
 //    }
 
-    public static double divide(double a, double b) throws ArithmeticException {
-        double quotient = 0.0;
-        if (b == 0) {
-            throw new ArithmeticException("Attempt to divide by zero in divide");
-        }
-        quotient = (double) a / b;
-        return quotient;
-    }
+//    public static double divide(double a, double b) throws ArithmeticException {
+//        double quotient = 0.0;
+//        if (b == 0) {
+//            throw new ArithmeticException("Attempt to divide by zero in divide");
+//        }
+//        quotient = (double) a / b;
+//        return quotient;
+//    }
 
 }
