@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MorningWarmups {
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 
 //        System.out.println(noAsterisk(100, 5));
 //        consoleWrite();
 //        System.out.println(divide(0, 0));
-    }
+//    }
 
     // TODO Create your multiplication method without the * operator (Hint: a loop might be helpful).
 
@@ -82,4 +82,19 @@ public class MorningWarmups {
 //        return quotient;
 //    }
 
+    // todo make an arraylist of factorials of the given int
+
+    public static ArrayList<Integer> factorial(int num) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) {
+                numbers.add(i);
+            }
+        }
+        return numbers;
+    }
+
+    public static void main(String[] args) {
+        factorial(100);
+    }
 }
