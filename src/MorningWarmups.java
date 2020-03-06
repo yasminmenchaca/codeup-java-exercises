@@ -83,7 +83,7 @@ public class MorningWarmups {
 //    }
 
 
-    /**
+    /*
      * Exercise 071 - Find Factors Efficiently
      * Find all of the factors for a given integer (int). The integer could be negative. The result needs to be sorted
      * in ascending order.
@@ -95,15 +95,16 @@ public class MorningWarmups {
      * @param num The number to be factored
      * @return An Integer ArrayList of factors of num.
      */
-    public static ArrayList<Integer> factorial(int num) {
-        ArrayList<Integer> numbers = new ArrayList<>();
-        for (int i = 1; i < num; i++) {
-            if (num % i == 0) {
-                numbers.add(i);
-            }
-        }
-        return numbers;
-    }
+
+//    public static ArrayList<Integer> factorial(int num) {
+//        ArrayList<Integer> numbers = new ArrayList<>();
+//        for (int i = 1; i < num; i++) {
+//            if (num % i == 0) {
+//                numbers.add(i);
+//            }
+//        }
+//        return numbers;
+//    }
 
 
 }
