@@ -82,8 +82,19 @@ public class MorningWarmups {
 //        return quotient;
 //    }
 
-    // todo make an arraylist of factorials of the given int
 
+    /**
+     * Exercise 071 - Find Factors Efficiently
+     * Find all of the factors for a given integer (int). The integer could be negative. The result needs to be sorted
+     * in ascending order.
+     * <p>
+     * The solution must be able to find the factors for 2080046 in less than 200000 nano-seconds. (ms/1000000).
+     * <p>
+     * LEVEL: DIFFICULT
+     *
+     * @param num The number to be factored
+     * @return An Integer ArrayList of factors of num.
+     */
     public static ArrayList<Integer> factorial(int num) {
         ArrayList<Integer> numbers = new ArrayList<>();
         for (int i = 1; i < num; i++) {
@@ -94,7 +105,5 @@ public class MorningWarmups {
         return numbers;
     }
 
-    public static void main(String[] args) {
-        factorial(100);
-    }
+
 }
