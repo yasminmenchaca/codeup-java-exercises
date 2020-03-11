@@ -2,6 +2,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class MorningWarmups {
@@ -107,4 +109,18 @@ public class MorningWarmups {
 //    }
 
 
+    public static void main(String[] args) {
+
+        String[] fruits = new String[]{"apple", "orange", "banana", "mango"};
+
+        // Convert String Array to List
+        List<String> list = Arrays.asList(fruits);
+
+        if (list.contains("pear")) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+
+    }
 }
